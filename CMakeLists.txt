@@ -8,7 +8,9 @@ find_package(raylib REQUIRED)
 include_directories(${raylib_INCLUDE_DIRS})
 
 # Add the executable for the project
-add_executable(MyProject src/main.cpp)
+add_executable(MyProject src/main.cpp src/ball.cpp)
+
+include_directories(include)
 
 # Add the path to the raylib library to the link directories
 link_directories(${raylib_LIBRARY_DIRS})
